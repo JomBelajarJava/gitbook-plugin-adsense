@@ -1,0 +1,15 @@
+{
+  "name": "gitbook-plugin-adsense",
+  "version": "0.0.1",
+  "description": "Adsense code for Jom Belajar Java website",
+  "author": "Burhanuddin Baharuddin",
+  "license": "Apache-2.0",
+  "engines": {
+    "gitbook": ">=3.x.x"
+  },
+  "homepage": "https://github.com/JomBelajarJava/gitbook-plugin-adsense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JomBelajarJava/gitbook-plugin-adsense.git"
+  }
+}
