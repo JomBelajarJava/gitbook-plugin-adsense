@@ -31,7 +31,7 @@ function injectAds(page) {
 
     var h2 = $('h2');
 
-    if (h2.length >= 2) {
+    if (h2 && h2.length >= 2) {
         // Inject ads in the middle of articles before title
         h2
             .eq(h2.length / 2)
