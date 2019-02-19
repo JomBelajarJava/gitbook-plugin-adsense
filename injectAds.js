@@ -1,5 +1,3 @@
-var cheerio = require('cheerio');
-
 var topAds = '<ins class="adsbygoogle" ' +
     'style="display:block" ' +
     'data-ad-client="ca-pub-8041854815282465" ' +
@@ -22,23 +20,8 @@ var bottomAds = '<ins class="adsbygoogle" ' +
     'data-full-width-responsive="true"></ins>';
 
 function injectAds(page) {
-    var $ = cheerio.load(page.content);
-
-    // Inject ads at the top and bottom of articles
-    $.root()
-        .prepend(topAds)
-        .append(bottomAds);
-
-    var h2 = $.root().find('h2');
-
-    if (h2 && h2.length >= 2) {
-        // Inject ads in the middle of articles before title
-        h2
-            .eq(h2.length / 2)
-            .before(middleAds);
-    }
-
-    return $.root().html();
+    page.content = topAds + page.content + bottomAds;
+    return page;
 }
 
 module.exports = injectAds;

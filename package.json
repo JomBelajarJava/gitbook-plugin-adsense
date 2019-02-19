@@ -11,8 +11,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/JomBelajarJava/gitbook-plugin-adsense.git"
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.2"
   }
 }
