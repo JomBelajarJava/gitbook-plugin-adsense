@@ -29,7 +29,7 @@ function injectAds(page) {
         .prepend(topAds)
         .append(bottomAds);
 
-    var h2 = $('h2');
+    var h2 = $.root().find('h2');
 
     if (h2 && h2.length >= 2) {
         // Inject ads in the middle of articles before title
